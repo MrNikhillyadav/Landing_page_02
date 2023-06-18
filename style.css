@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.main{
+    width: 100%;
+    /* height: 100%; */
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+    
+}
+#top{
+    width: 100%;
+    min-height: 60vh;
+    background-color: blue;
+    background-image: url(imgs/4.jpg);
+    /* background-position: center; */
+    background-position: 80% 60%;  /* background-position: widh% height%  */
+    background-size: cover;
+    position: relative;
+}
+#text{
+    /* background-color: red; */
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    padding: 0 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#text h1{
+    font-size: 9vh;
+    font-weight: 600;
+
+}
+#text-right {
+    font-size: 20px;
+    display: flex;
+    width: 60%;    /*  width of text-right container which contains paragraphs*/
+    justify-content: space-between;
+    align-items: center;
+   
+}
+#text-right p{
+    font-size: 12px;
+    width: 35%;       /*  width of paragraph text*/
+    line-height: 1.5vh;
+
+}
+
+/* to make an overlay over the background-image */
+#overlay{
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(55, 54, 54, 0.023);
+}
+#bottom{
+    width: 100%;
+    min-height: 40vh;
+    /* background-color: rgb(62, 61, 61); */
+    display: flex;
+}
+#bone{
+    width: 25%;
+    /* height: 100%; */
+    min-height: inherit;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+   
+    
+}
+#bone h3{
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+#bone p{
+    margin-top: 20px;
+    font-size: 12px;
+}
+#btwo{
+    width: 25%;
+    /* height: 100%; */
+    min-height: inherit;
+    background-color: rgb(204, 255, 20);
+    background-image: url(imgs/3.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+#bthree{
+    width: 20%;
+    /* height: 100%; */
+    min-height: inherit;
+    background-color: rgb(20, 255, 36);
+}
+#bthree-top{
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(251, 112, 32);
+    padding: 40px;
+    color: white;
+}
+#bthree-top p{
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+
+#bthree-bottom{
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(255, 252, 250);
+    background-image: url(imgs/5.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+#bfour{
+    width: 30%;
+    /* height: 100%; */
+    min-height: inherit;
+    background-color: rgb(57, 56, 57);
+    color: white;
+    padding: 40px;
+}
+.notf{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(244, 42, 42, 0.714);
+    border-radius: 46% ;
+    border: 1px solid rgb(216, 214, 214);
+}
+.notf p{
+    width: 86%;
+    font-size: 12px;
+
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#navlinks{
+    padding: 20px;
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items:  center;
+}
+#navlinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.btn{
+    padding: 2px 10px;
+    background-color: rgba(255, 255, 255, 0.277);
+    color: white;
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+   justify-content:space-between;
+   align-items: center;
+   font-size: 15px;
+
+}
+
+.btn i{
+   margin-right: 30px;
+
+}
+#hamburger-btn{
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width : 500px) {
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start ;
+    }
+    #overlay #text #text-right{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    #overlay #text #text-right p{
+        width: initial;
+        margin-top: 20px;
+
+    }
+    #overlay #text #text-right #icons{
+        margin-top: 20px;  
+
+    }
+    #text h1{
+        font-size: 4vh;
+    }
+    #bottom{
+        flex-direction: column;
+        min-height: 20vh;
+    }
+    #bone{
+        width: 100%;
+    }
+    #btwo{
+        width: 100%;
+        min-height: 30vh;
+    }
+    #bthree{
+        flex-direction: column;
+        width: 100%;
+    }
+    #bfour{
+        width: 100%;
+    }
+    
+}
